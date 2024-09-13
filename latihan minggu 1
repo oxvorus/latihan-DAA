@@ -1,0 +1,89 @@
+LATIHAN MINGGU 1
+1. Cari nilai KPK dari 3 dan 4
+Kelipatan 3: 3, 6, 9, 12, 15, ...
+Kelipatan 4: 4, 8, 12, 16, ...
+Bilangan 12 adalah kelipatan terkecil yang sama-sama dimiliki oleh 3 dan 4.
+2. Fungsi untuk menukar posisi dua variabel
+def tukar_posisi(x, y):
+  """Menukar nilai dua variabel.
+
+  Args:
+    x: Variabel pertama.
+    y: Variabel kedua.
+  """
+  temp = x
+  x = y
+  y = temp
+
+# Contoh penggunaan:
+manggis = "piring 1"
+pisang = "piring 2"
+
+print("Sebelum ditukar:")
+print("Manggis:", manggis)
+print("Pisang:", pisang)
+
+tukar_posisi(manggis, pisang)
+
+print("\nSetelah ditukar:")
+print("Manggis:", manggis)
+print("Pisang:", pisang)
+
+
+3. Luas segitiga
+Luas segitiga = 1/2 * alas * tinggi = 1/2 * 25 * 30 = 375 satuan luas
+4. Algoritma dan pseudocode luas jajar genjang
+Algoritma:
+Input panjang alas jajar genjang.
+Input tinggi jajar genjang.
+Hitung luas dengan rumus: luas = panjang * tinggi.
+Tampilkan hasil perhitungan.
+Pseudocode:
+ALGORITMA LuasJajarGenjang
+    KAMUS
+        panjang, tinggi, luas : integer
+
+    ALGORITMA
+        BACA panjang
+        BACA tinggi
+        luas <- panjang * tinggi
+        TULIS luas
+5. Algoritma dan pseudocode volume tabung
+Algoritma:
+Input jari-jari tabung.
+Input tinggi tabung.
+Hitung luas alas lingkaran: luas_alas = π * jari-jari² (gunakan nilai π = 3.14).
+Hitung volume tabung: volume = luas alas * tinggi.
+Tampilkan hasil perhitungan.
+Pseudocode:
+ALGORITMA VolumeTabung
+    KAMUS
+        jari_jari, tinggi, luas_alas, volume : real
+
+    ALGORITMA
+        BACA jari_jari
+        BACA tinggi
+        luas_alas <- 3.14 * jari_jari * jari_jari
+        volume <- luas_alas * tinggi
+        TULIS volume
+6. Algoritma dan pseudocode volume kerucut
+Algoritma:
+Input diameter kerucut.
+Input tinggi kerucut.
+Hitung jari-jari: jari_jari = diameter / 2.
+Hitung luas alas lingkaran: luas_alas = π * jari-jari² (gunakan nilai π ≈ 3.14).
+Hitung volume kerucut: volume = 1/3 * luas_alas * tinggi.
+Tampilkan hasil perhitungan.
+Pseudocode:
+ALGORITMA VolumeKerucut
+    KAMUS
+        diameter, tinggi, jari_jari, luas_alas, volume : real
+
+    ALGORITMA
+        BACA diameter
+        BACA tinggi
+        jari_jari <- diameter / 2
+        luas_alas <- 3.14 * jari_jari * jari_jari
+        volume <- 1/3 * luas_alas * tinggi
+        TULIS volume
+
